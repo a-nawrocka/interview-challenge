@@ -1,9 +1,9 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import DishList from "./DishList";
+import MenuPreview from "./MenuPreview";
 
-describe("Given valid array of dish objects", () => {
-	it("displays list of dishes", () => {
+describe("Given valid array of selected dish objects", () => {
+	it("displays list of selected dishes", () => {
 		const expectedDishes = [
 			{
 				id: 1,
@@ -17,7 +17,7 @@ describe("Given valid array of dish objects", () => {
 			},
 		];
 
-		const component = renderer.create(<DishList dishes={expectedDishes} onDishSelected={() => {}} />);
+		const component = renderer.create(<MenuPreview selectedDishes={expectedDishes} onDishRemoved={() => {}} />);
 
 		let tree = component.toJSON();
 		expect(tree).toMatchSnapshot();

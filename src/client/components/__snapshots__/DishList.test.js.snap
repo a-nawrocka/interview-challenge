@@ -6,6 +6,7 @@ exports[`Given valid array of dish objects displays list of dishes 1`] = `
 >
   <li
     className="item"
+    onClick={[Function]}
   >
     <h2>
       dish one
@@ -30,6 +31,7 @@ exports[`Given valid array of dish objects displays list of dishes 1`] = `
   </li>
   <li
     className="item"
+    onClick={[Function]}
   >
     <h2>
       dish two

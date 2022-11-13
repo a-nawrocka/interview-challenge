@@ -1,8 +1,42 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Given valid dish object display dish information 1`] = `
+exports[`Given valid dish object and onRemoved function display dish information with remove button 1`] = `
 <li
   className="item"
+>
+  <h2>
+    tasty dish
+  </h2>
+  <p>
+    <span
+      className="dietary"
+    >
+      v
+    </span>
+    <span
+      className="dietary"
+    >
+      ve
+    </span>
+    <span
+      className="dietary"
+    >
+      df
+    </span>
+  </p>
+  <button
+    className="remove-item"
+    onClick={[Function]}
+  >
+    x
+  </button>
+</li>
+`;
+
+exports[`Given valid dish object and onSelected function display dish information without remove button 1`] = `
+<li
+  className="item"
+  onClick={[Function]}
 >
   <h2>
     tasty dish
