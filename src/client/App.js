@@ -3,6 +3,7 @@ import "./App.css";
 import Feedr from "./services/Feedr";
 import DishList from "./components/DishList";
 import MenuPreview from "./components/MenuPreview";
+import Filter from "./components/Filter";
 
 class App extends React.Component {
 	state = {
@@ -32,6 +33,11 @@ class App extends React.Component {
 		});
 	};
 
+	onFilter = async (term) => {
+		const items = await Feedr.getDishes(term);
+		this.setState({ dishes: items });
+	};
+
 	render() {
 		return (
 			<div className="wrapper">
@@ -52,9 +58,7 @@ class App extends React.Component {
 				<div className="container menu-builder">
 					<div className="row">
 						<div className="col-4">
-							<div className="filters">
-								<input className="form-control" placeholder="Name" />
-							</div>
+							<Filter onFilter={this.onFilter} />
 							<DishList dishes={this.state.dishes} onDishSelected={this.onDishSelected} />
 						</div>
 						<MenuPreview selectedDishes={this.state.selectedDishes} onDishRemoved={this.onDishRemoved} />
