@@ -24,6 +24,6 @@ describe("Given valid API response", () => {
 
 		render(<App />);
 
-		expect(screen.getByText("6 items")).toBeInTheDocument();
+		expect(screen.getByText("0 items")).toBeInTheDocument();
 	});
 });

@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given valid array of selected dish objects displays summary of selected dishes 1`] = `
+<div
+  className="menu-summary"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-6 menu-summary-left"
+      >
+        <span>
+          2
+           
+          items
+        </span>
+      </div>
+      <div
+        className="col-6 menu-summary-right"
+      >
+        1x 
+        <span
+          className="dietary"
+        >
+          v
+        </span>
+        1x 
+        <span
+          className="dietary"
+        >
+          ve
+        </span>
+        1x 
+        <span
+          className="dietary"
+        >
+          df
+        </span>
+        1x 
+        <span
+          className="dietary"
+        >
+          rsf
+        </span>
+        1x 
+        <span
+          className="dietary"
+        >
+          n!
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
