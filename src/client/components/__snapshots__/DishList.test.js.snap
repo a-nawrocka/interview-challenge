@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given valid array of dish objects displays list of dishes 1`] = `
+<ul
+  className="item-picker"
+>
+  <li
+    className="item"
+  >
+    <h2>
+      dish one
+    </h2>
+    <p>
+      <span
+        className="dietary"
+      >
+        v
+      </span>
+      <span
+        className="dietary"
+      >
+        ve
+      </span>
+      <span
+        className="dietary"
+      >
+        df
+      </span>
+    </p>
+  </li>
+  <li
+    className="item"
+  >
+    <h2>
+      dish two
+    </h2>
+    <p>
+      <span
+        className="dietary"
+      >
+        rsf
+      </span>
+      <span
+        className="dietary"
+      >
+        n!
+      </span>
+    </p>
+  </li>
+</ul>
+`;

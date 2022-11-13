@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given valid dish object display dish information 1`] = `
+<li
+  className="item"
+>
+  <h2>
+    tasty dish
+  </h2>
+  <p>
+    <span
+      className="dietary"
+    >
+      v
+    </span>
+    <span
+      className="dietary"
+    >
+      ve
+    </span>
+    <span
+      className="dietary"
+    >
+      df
+    </span>
+  </p>
+</li>
+`;
